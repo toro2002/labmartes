@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/CVentas.css">
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+    <script src="https://kit.fontawesome.com/bf208e9523.js" crossorigin="anonymous"></script>
+    <title>CONTROL VENTAS</title>
+</head>
+
+<body>
+    <div class="sidebar close">
+        <div class="logo-details">
+            <img src="/img/69601130_508940209682252_4217431282197463040_n.jpg" alt="" style="width: 60px;">
+            <span class="logo_name" style='color:#080808'>AproTila</span>
+        </div>
+        <ul class="nav-links">
+
+            <li>
+                <a href="#">
+                    <i class='bx bx-grid-alt'></i>
+                    <span class="link_name">Panel</span>
+                </a>
+                <ul class="sub-menu blank">
+                    <li><a class="link_name" href="#">Panel</a></li>
+                </ul>
+            </li>
+            <li>
+                <div class="iocn-link">
+                    <a href="#">
+                        <i class="fa-solid fa-money-check-dollar"></i>
+                        <span class="link_name">Modulo Ventas</span>
+                    </a>
+                </div>
+                <ul class="sub-menu blank">
+                    <li><a class="link_name" href="#">Ventas</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="fa-solid fa-water"></i>
+                    <span class="link_name">Modulo Pilas</span>
+                </a>
+                <ul class="sub-menu blank">
+                    <li><a class="link_name" href="#">Pilas</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="fa-solid fa-whiskey-glass"></i>
+                    <span class="link_name">Modulo Concentrado</span>
+                </a>
+                <ul class="sub-menu blank">
+                    <li><a class="link_name" href="#">Modulo Concentado</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="fa-solid fa-fish-fins"></i>
+                    <span class="link_name">Modulo Ingreso</span>
+                </a>
+                <ul class="sub-menu blank">
+                    <li><a class="link_name" href="#">Modulo Ingreso</a></li>
+                </ul>
+            </li>
+            <li>
+                <div class="iocn-link">
+                    <a href="#">
+                        <i class="fa-solid fa-fish"></i>
+                        <span class="link_name">Control Peces</span>
+                    </a>
+                    <i class='bx bxs-chevron-down arrow'></i>
+                </div>
+                <ul class="sub-menu">
+                    <li><a class="link_name" href="#">Control Peces</a></li>
+                    <li><a href="#">Mortalidad</a></li>
+                    <li><a href="#">Natalidad</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">
+                    <i class='bx bx-cog'></i>
+                    <span class="link_name">Configuración</span>
+                </a>
+                <ul class="sub-menu blank">
+                    <li><a class="link_name" href="#">Configuración</a></li>
+                </ul>
+            </li>
+            <li>
+                <div class="profile-details">
+                    <div class="profile-content">
+                        <img src="img/photo-1610088441520-4352457e7095.jfif" alt="profileImg">
+                    </div>
+                    <div class="name-job">
+                        <div class="profile_name">Encargado</div>
+                        <div class="job">Trabajador</div>
+                    </div>
+                    <i class='bx bx-log-out' style="color: aliceblue;"></i>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <section class="home-section">
+        <div class="home-content">
+            <i class="bx bx-menu"></i>
+
+            <div class="container">
+                <h1>Control Ventas</h1>
+                <table class="table">
+                    <div class="crud">
+                        <i class="fa-solid fa-circle-plus" id="add"></i>
+                        <i class="fa-solid fa-pen-to-square"></i>
+                        <i class="fa-solid fa-trash"></i>
+                    </div>
+
+
+                    <thead>
+                        <tr>
+                            <th>Id Venta</th>
+                            <th>Encargado</th>
+                            <th>Fecha</th>
+                            <th>Pila</th>
+                            <th>Peso</th>
+                            <th>Tilapia</th>
+                            <th>Total</th>
+                            <th>Cliente</th>
+                            <th>Numero</th>
+                            <th>Tipo de Pago</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td data-label="Id Venta">2</td>
+                            <td data-label="Encargado">Joan Bravo</td>
+                            <td data-label="Fecha">10/01/2012</td>
+                            <td data-label="Pila">1</td>
+                            <td data-label="Peso">2000</td>
+                            <td data-label="Tilapia">5</td>
+                            <td data-label="Total">5000</td>
+                            <td data-label="Cliente">Joan Bravo Solano</td>
+                            <td data-label="Numero">87285060</td>
+                            <td data-label="Tipo de Pago">Sinpe</td>
+                        </tr>
+                        <tr>
+                            <td data-label="Id Venta">3</td>
+                            <td data-label="Encargado">Joan Bravo</td>
+                            <td data-label="Fecha">10/01/2012</td>
+                            <td data-label="Pila">1</td>
+                            <td data-label="Peso">2000</td>
+                            <td data-label="Tilapia">5</td>
+                            <td data-label="Total">5000</td>
+                            <td data-label="Cliente">Joan Bravo Solano</td>
+                            <td data-label="Numero">87285060</td>
+                            <td data-label="Tipo de Pago">Sinpe</td>
+                        </tr>
+                        <tr>
+                            <td data-label="Id Venta">1</td>
+                            <td data-label="Encargado">Joan Bravo</td>
+                            <td data-label="Fecha">10/01/2012</td>
+                            <td data-label="Pila">1</td>
+                            <td data-label="Peso">2000</td>
+                            <td data-label="Tilapia">5</td>
+                            <td data-label="Total">5000</td>
+                            <td data-label="Cliente">Joan Bravo Solano</td>
+                            <td data-label="Numero">87285060</td>
+                            <td data-label="Tipo de Pago">Sinpe</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+    </section>
+    <section class="formu-modal" id="formu-modal">
+        <div class="form">
+            <div class="closeForm">
+                <i class="fas fa-times" id="closeModal"></i>
+            </div>
+
+            <h4>Añadir Venta</h4>
+            <form class="formulario" action="">
+                <div class="select">
+
+                    <select id="encargado">
+                        <option disabled selected="">Encargado</option>
+                        <option value="Encargado 1">Juan</option>
+                        <option value="Encargado 2">Maria</option>
+                        <option value="Encargado 3">Pedro</option>
+                    </select>
+                </div>
+                <div class="select pila">
+
+                    <select id="menupila">
+                        <option disabled selected="">Número Pila</option>
+                        <option value="Pila 1">1</option>
+                        <option value="Pila 2">2</option>
+                        <option value="Pila 3">3</option>
+                        <option value="Pila 4">4</option>
+                        <option value="Pila 5">5</option>
+                        <option value="Pila 6">6</option>
+                        <option value="Pila 7">7</option>
+                        <option value="Pila 8">8</option>
+                        <option value="Pila 9">9</option>
+                        <option value="Pila 10">10</option>
+                        <option value="Pila 11">11</option>
+                        <option value="Pila 12">12</option>
+                        <option value="Pila 13">13</option>
+                        <option value="Pila 14">14</option>
+                        <option value="Pila 15">15</option>
+                        <option value="Pila 16">16</option>
+                        <option value="Pila 17">17</option>
+                        <option value="Pila 18">18</option>
+                    </select>
+                </div>
+                <div class="box">
+                    <input id="peso" type="number" name="uname" required>
+                    <label>Peso en KG</label>
+                </div>
+                <div class="box">
+                    <input id="tilapia" type="number" name="uname" required>
+                    <label>Tilapia</label>
+                </div>
+                <div class="box">
+                    <input id="precio" type="number" name="uname" required>
+                    <label>Precio</label>
+                </div>
+                <div class="box">
+                    <input id="total" type="number" name="uname" required>
+                    <label>Total</label>
+                </div>
+                <div class="box">
+                    <input id="nomCliente" type="text" name="uname" required>
+                    <label>Cliente</label>
+                </div>
+                <div class="box">
+                    <input id="numero" type="text" name="uname" required>
+                    <label>Número</label>
+                </div>
+                <div class="select">
+                    <select id="pago" name="pago">
+                        <option disabled selected="">Tipo Pago</option>
+                        <option value="efectivo">Efectivo</option>
+                        <option value="sinpe">Sinpe</option>
+                        <option value="transferencia">Transferencia</option>
+                    </select>
+                </div>
+                <button class="btnForm" onclick="validarCampos()">AÑADIR</button>
+            </form>
+
+        </div>
+    </section>
+    <script src="https://momentjs.com/downloads/moment.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
